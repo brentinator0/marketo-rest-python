@@ -2269,7 +2269,7 @@ class MarketoClient:
             'get', self.host + "/rest/asset/v1/emailTemplate/" + str(id) + "/content", args)
         if result is None:
             raise Exception("Empty Response")
-        return result['result']
+        return result
 
     def update_email_template_content(self, id, content):
         self.authenticate()
